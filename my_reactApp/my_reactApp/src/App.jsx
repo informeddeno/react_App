@@ -25,11 +25,9 @@ function App() {
         </button>
         <p>
           <script>
-	    <formfield>
-	      <legend>To Do List</legend>
-	      function addItem() {
-		  const input = document.getElementById("itemInput");
-		  const value = input.value.trim();
+	    function addItem() {
+		const input = document.getElementById("itemInput");
+		 const value = input.value.trim();
 		  if (value === "") return;
 
 		  const li = document.createElement("li");
@@ -39,7 +37,6 @@ function App() {
 		  document.getElementById("itemList").appendChild(li);
 		  input.value = "";
 	      }
-	    </formfield>
 	  </script>
         </p>
       </div>
