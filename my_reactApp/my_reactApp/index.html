@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <link rel="stylesheets" href="/src/App.css" />
+    <link rel="stylesheet" href="/src/App.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My React To Do List Manager</title>
   </head>
   <body>
-    <div id="container"
-	 <h2>My Dynamic App:  List Manager </h2>
-</div>
+    <div id="container">
+      <h2>My Dynamic App:  List Manager </h2>
+    </div>
     <div>
       <input type="text" id="itemInput" placeholder="Enter an item" />
       <button onclick="addItem()">Add Item</button>
@@ -19,6 +19,23 @@
       <ul id="itemList"></ul>
 
     </div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script src="/src/main.jsx">
+      <formfield>
+    <legend>To Do List</legend>
+    function addItem() {
+      const input = document.getElementById("itemInput");
+      const value = input.value.trim();
+      if (value === "") return;
+
+      const li = document.createElement("li");
+      li.className = "list-item";
+      li.textContent = value;
+
+      document.getElementById("itemList").appendChild(li);
+      input.value = "";
+    }
+      </formfield>
+
+    </script>
   </body>
 </html>
