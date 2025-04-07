@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -9,24 +9,41 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
+   //   <a href="https://vite.dev" target="_blank">
+      //  <img src={viteLogo} className="logo" alt="Vite logo" />
+      //</a>
+      //<href="https://react.dev" target="_blank">
+      //  <img src={reactLogo} className="logo react" alt="React logo" />
+      // </a>
+  </div> 
+<h1>My To Do List</h1>
+</div>
+<div className="">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          <script>
+	    <formfield>
+	      <legend>To Do List</legend>
+	      function addItem() {
+		  const input = document.getElementById("itemInput");
+		  const value = input.value.trim();
+		  if (value === "") return;
+
+		  const li = document.createElement("li");
+		  li.className = "list-item";
+		  li.textContent = value;
+
+		  document.getElementById("itemList").appendChild(li);
+		  input.value = "";
+	      }
+	    </formfield>
+	  </script>
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+      <p className="">
+  
       </p>
     </>
   )
