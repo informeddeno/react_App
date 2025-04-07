@@ -26,7 +26,7 @@ function App() {
         <p>
           <script>
 	    function addItem() {
-		let input = document.getElementById("itemInput");
+		input = document.getElementById("itemInput");
 		 const value = input.value.trim();
 		  if (value === "") return;
 
