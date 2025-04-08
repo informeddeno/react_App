@@ -31,12 +31,11 @@ function App() {
 //      </div>
 //      <p className="">
   
-      </p>
       <div>
        < AddItem />
       < Input />
       <  Value />
-<Li />
+      <Li />
 
       
 
