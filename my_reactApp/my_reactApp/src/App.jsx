@@ -7,17 +7,7 @@ function App() {
   const [count, setCount] = useState(0)
 
     return (
-       <div>
-   //   <a href="https://vite.dev" target="_blank">
-      //  <img src={viteLogo} className="logo" alt="Vite logo" />
-      //</a>
-   //<a href="https://react.dev" target="_blank">
-      //  <img src={reactLogo} className="logo react" alt="React logo" />
-      // </a>
-  </div> 
-      <div>
-        <h1>My To Do List</h1>
-      </div>
+       <div><h1>My To Do List</h1></div>
 //<div className="">
   //      <button OnClick={() => setCount((count) => count + 1)}>
   //        count is {count}
