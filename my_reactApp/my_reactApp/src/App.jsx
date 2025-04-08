@@ -20,17 +20,17 @@ function App() {
 	<h1>My To Do List</h1>
       </div>
 <div className="">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button OnClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p>
           <script>
-	    function addItem() {
-		input = document.getElementById("itemInput");
-		 const value = input.value.trim();
+	    function AddItem() {
+		const Input = document.getElementById("itemInput");
+		 const Value = input.value.trim();
 		  if (value === "") return;
 
-		  const li = document.createElement("li");
+		  const Li = document.createElement("li");
 		  li.className = "list-item";
 		  li.textContent = value;
 
@@ -43,8 +43,26 @@ function App() {
       <p className="">
   
       </p>
-    </>
+      <div>
+	AddItem
+      </div>
+      <div>
+        Input
+      </div>
+      <div>
+	Value
+      </div>
+Li
+</div>
+
+      
+
+
+
+</div>
+      
   )
 }
+
 
 export default App

@@ -19,19 +19,22 @@
       <ul id="itemList"></ul>
 
     </div>
+    <div>
     <script src="/src/main.jsx">
-      function addItem() {
-      const input = document.getElementById("itemInput");
-      const value = input.value.trim();
-      if (value === "") return;
+      function AddItem() {
+                const Input = document.getElementById("itemInput");
+                 const Value = input.value.trim();
+                  if (value === "") return;
 
-      const li = document.createElement("li");
-      li.className = "list-item";
-      li.textContent = value;
+                  const Li = document.createElement("li");
+                  li.className = "list-item";
+                  li.textContent = value;
 
-      document.getElementById("itemList").appendChild(li);
-      input.value = "";
-    }
+                  document.getElementById("itemList").appendChild(li);
+                  input.value = "";
+              }
+
     </script>
+    </div>
   </body>
 </html>
