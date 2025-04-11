@@ -52,7 +52,7 @@ function App() {
   
 //      <div>
  <> <AddItem /> </>
- <> <AddInput /></>
+ <><div><AddInput /></div></>
  <> <Value /></>
  <> <Li /></>
  <></div></>
