@@ -46,8 +46,8 @@ function App() {
 //      <p className="">
   
 //      <div>
-      <AddItem />
-  //    <AddInput />
+ < <AddItem /> />
+ < <AddInput />
       <Value />
       <Li />
 
