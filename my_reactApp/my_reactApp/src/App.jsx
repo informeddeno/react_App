@@ -47,15 +47,15 @@ function App() {
      //         }
     //      </script>
   //      </p>
-	  </div>
+	//  </div>
 //      <p className="">
   
-      <div>
+//      <div>
  <> <AddItem /> </>
  <>   <AddInput />  </>
  <> <Value /></>
  <> <Li /></>
- <></div></>
+ </div>
       
  )
 }
