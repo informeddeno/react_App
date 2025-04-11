@@ -46,18 +46,13 @@ function App() {
 //      <p className="">
   
 //      <div>
- < <AddItem /> />
- < <AddInput />
-      <Value />
-      <Li />
-
+ <> <AddItem /> </>
+ <> <AddInput /></>
+ <> <Value /></>
+ <> <Li /></>
+ <></div></>
       
-
-
-
-</div>
-      
-  )
+ )
 }
 
 
