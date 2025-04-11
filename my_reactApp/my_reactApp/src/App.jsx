@@ -47,7 +47,7 @@ function App() {
   
 //      <div>
       <AddItem />
-      <AddInput />
+  //    <AddInput />
       <Value />
       <Li />
 
