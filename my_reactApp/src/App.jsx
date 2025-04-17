@@ -1,36 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import React, { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [items, setItems] = useState([]);
+  const [inputValue, setInputValue] = useState("");
+
+  const addItem = () => {
+    if (inputValue.trim() === "") return;
+    setItems([...items, inputValue]);
+    setInputValue("");
+  };
 
   return (
-    <>
+    <div className="container">
+      <h2>My Dynamic App: List Manager</h2>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <input
+          type="text"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          placeholder="Enter an item"
+        />
+        <button onClick={addItem}>Add Item</button>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="list-container">
+        <ul>
+          {items.map((item, index) => (
+            <li key={index} className="list-item">
+              {item}
+            </li>
+          ))}
+        </ul>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
