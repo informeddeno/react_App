@@ -22,40 +22,10 @@ function AddItem() {
               }
 
 function App() {
-    0;276;0c  const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0)
 
     return (
-	<div>
-	  <h1>My To Do List</h1>
-	  //<div className="button">
-        <button OnClick={() => setCount((count) => count + 1)}>
-          count is {count}
-       </button>
-       <p>
-        <script>
-          function AddItem() {
-	      let Input = document.getElementById("itemInput");
-	      const Value = input.value.trim();
-                  if (value === "") return;
-
-              const Li = document.createElement("li");
-                  li.className = "list-item";
-                  li.textContent = value;
-
-             document.getElementById("itemList").appendChild(li);
-                  input.value = "";
-             }
-           </script>
-        </p>
-	  </div>
-       <p className="">
-  
-   <div>
-	<AddItem /> 
-	<AddInput />  
-	 <Value />
-	<Li />
-   </div>
+	<div><AddItem /></div>
       
   )
 }
