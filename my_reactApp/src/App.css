@@ -23,9 +23,15 @@ h2 {
   margin-bottom: 20px;
 }
 
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
 input[type="text"] {
   padding: 10px;
-  width: 65%;
+  width: 70%;
   border: 1px solid #ccc;
   border-radius: 5px 0 0 5px;
   font-size: 14px;
@@ -42,16 +48,15 @@ button {
 }
 
 .list-container {
-  margin-top: 20px;
-  padding: 10px;
   background: #e6f9f6;
   border: 1px solid #b2dfdb;
   border-radius: 5px;
-  text-align: left;
+  padding: 10px;
   min-height: 50px;
+  text-align: left;
 }
 
 .list-item {
-  padding: 5px 0;
+  margin: 5px 0;
   color: #333;
 }

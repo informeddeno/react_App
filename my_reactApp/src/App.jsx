@@ -6,15 +6,15 @@ function App() {
   const [inputValue, setInputValue] = useState("");
 
   const addItem = () => {
-    if (inputValue.trim() === "") return;
-    setItems([...items, inputValue]);
-    setInputValue("");
+    if (inputValue.trim() === "") return; // Ensure input is not empty
+    setItems([...items, inputValue]); // Add item to the list
+    setInputValue(""); // Clear input
   };
 
   return (
     <div className="container">
       <h2>My Dynamic App: List Manager</h2>
-      <div>
+      <div className="input-container">
         <input
           type="text"
           value={inputValue}
