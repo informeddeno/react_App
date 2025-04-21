@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import "./public/index.html";
+import "./index.html";
 
 function App() {
   const [Items, setItems] = useState([]); // Capitalized state name for consistency
