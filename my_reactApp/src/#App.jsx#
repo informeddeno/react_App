@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+
+0;276;0cimport React, { useState } from "react";
 import "./App.css";
-import "./public/index.html";
 
 function App() {
   const [Items, setItems] = useState([]); // Capitalized state name for consistency
