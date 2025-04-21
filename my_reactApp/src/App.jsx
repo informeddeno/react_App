@@ -13,27 +13,9 @@ function App() {
   };
 
   return (
-    <div className="Container">
-      <h2>My Dynamic App: List Manager</h2>
-      <div className="InputContainer">
-        <input
-          type="text"
-          value={InputValue}
-          onChange={(e) => setInputValue(e.target.value)} // Update InputValue state
-          placeholder="Enter an item"
-        />
-        <button onClick={AddItem}>Add Item</button>
+      <div>
+	<App  />
       </div>
-      <div className="ListContainer">
-        <ul>
-          {Items.map((item, index) => (
-            <li key={index} className="ListItem">
-              {item}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
   );
 }
 
