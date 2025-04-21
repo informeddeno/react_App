@@ -12,8 +12,9 @@ function App() {
   const [InputValue, setInputValue] = useState(""); // Capitalized state name for consistency
 
   return (
-      <div>
-	<App  />
+      <div> 
+	<App />
+	<AddItem />
       </div>
   );
 }
