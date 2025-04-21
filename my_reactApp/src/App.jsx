@@ -2,31 +2,31 @@ import React, { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [items, setItems] = useState([]);
-  const [inputValue, setInputValue] = useState("");
+  const [Items, setItems] = useState([]); // Capitalized state name for consistency
+  const [InputValue, setInputValue] = useState(""); // Capitalized state name for consistency
 
-  const addItem = () => {
-    if (inputValue.trim() === "") return; // Ensure input is not empty
-    setItems([...items, inputValue]); // Add item to the list
-    setInputValue(""); // Clear input
+  const AddItem = () => { // Capitalized function name
+    if (InputValue.trim() === "") return; // Prevent adding empty items
+    setItems((prevItems) => [...prevItems, InputValue]); // Add the new item to the list
+    setInputValue(""); // Clear the input field after adding the item
   };
 
   return (
-    <div className="container">
+    <div className="Container">
       <h2>My Dynamic App: List Manager</h2>
-      <div className="input-container">
+      <div className="InputContainer">
         <input
           type="text"
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
+          value={InputValue}
+          onChange={(e) => setInputValue(e.target.value)} // Update InputValue state
           placeholder="Enter an item"
         />
-        <button onClick={addItem}>Add Item</button>
+        <button onClick={AddItem}>Add Item</button>
       </div>
-      <div className="list-container">
+      <div className="ListContainer">
         <ul>
-          {items.map((item, index) => (
-            <li key={index} className="list-item">
+          {Items.map((item, index) => (
+            <li key={index} className="ListItem">
               {item}
             </li>
           ))}
