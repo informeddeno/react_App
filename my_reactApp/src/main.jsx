@@ -6,7 +6,7 @@ import "./public/index.html";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
  root.render(
-  <React.StrictMode>
+  <react.StrictMode>
     <App />
-  </React.StrictMode>
+  </react.StrictMode>
 );
