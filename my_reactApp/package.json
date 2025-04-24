@@ -2,8 +2,7 @@
   "main": "server.js",
   "name": "my-reactapp",
   "private": "true",
-  "version": "0.0.0",
-//"type": "module",
+    "version": "0.0.0",
   "scripts": {
   "dev":"npm run start",
   "start": "node server.js",
