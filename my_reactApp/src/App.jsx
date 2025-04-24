@@ -1,21 +1,46 @@
 import React, { useState } from "react";
 import "./App.css";
 
-const AddItem = () => { // Capitalized function name                                                                                      
-    if (InputValue.trim() === "") return; // Prevent adding empty items                                                                     
-    setItems((prevItems) => [...prevItems, InputValue]); // Add the new item to the list                                                    
-    setInputValue(""); // Clear the input field after adding the item                                                                       
+// Define AddItem as a separate component
+function AddItem({ items, setItems, inputValue, setInputValue }) {
+  const handleAddItem = () => {
+    if (inputValue.trim() === "") return;
+    setItems((prevItems) => [...prevItems, inputValue]);
+    setInputValue("");
   };
 
+  return (
+    <div>
+      <input
+        type="text"
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
+        placeholder="Type an item"
+      />
+      <button onClick={handleAddItem}>Add</button>
+    </div>
+  );
+}
+
 function App() {
-  const [Items, setItems] = useState([]); // Capitalized state name for consistency
-  const [InputValue, setInputValue] = useState(""); // Capitalized state name for consistency
+  const [items, setItems] = useState([]);
+  const [inputValue, setInputValue] = useState("");
 
   return (
-      <div> 
-	<App />
-	<AddItem />
-      </div>
+    <div>
+      <h1>Todo List</h1>
+      <AddItem
+        items={items}
+        setItems={setItems}
+        inputValue={inputValue}
+        setInputValue={setInputValue}
+      />
+      <ul>
+        {items.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
