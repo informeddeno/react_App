@@ -3,7 +3,7 @@
   "name": "my-reactapp",
   "private": "true",
   "version": "0.0.0",
-  "type": "module",
+//"type": "module",
   "scripts": {
   "dev":"npm run start",
   "start": "node server.js",
