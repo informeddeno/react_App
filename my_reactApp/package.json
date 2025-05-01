@@ -2,17 +2,18 @@
   "main": "server.js",
   "name": "my-reactapp",
   "private": "true",
-    "version": "0.0.0",
+  "version": "0.0.0",
   "scripts": {
-  "dev":"npm run start",
-  "start": "node server.js",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject",
-  "lint": "eslint ."
+    "dev": "npm run start",
+    "start": "node server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint ."
   },
   "dependencies": {
-    "express": "^5.1.0",
+    "express": "^4.21.2",
+    "path-to-regexp": "^8.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
