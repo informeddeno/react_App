@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="Container">
-      <h2>Dynamic List Manager App</h2>
+      <h2>My Dynamic App: List Manager</h2>
       <div>
         <input
           type="text"
